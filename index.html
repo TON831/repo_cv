@@ -7,61 +7,101 @@
     <title>Proyecto CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    
 </head>
-<body>
+<body onload="getEdad()">
   <header class="header">
-    <div class="card text-white bg-dark mb-3">
-      <h1>Gaston Alejandro Truffe</h1>
-      <h5>Ingeniero Electrónico</h5>
+    <div class="card text-white bg-dark mb-3" style="width: 100%; height: 150px;">
+      <h1>&emsp;Gaston Alejandro Truffe</h1>
+      <h5>&emsp;&emsp;Ingeniero Electrónico</h5>
       <p></p>
-      <p>
+      <p>&emsp;&emsp;
+        <span>    
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-            </svg> 
-         Teléfono: +54 (0343) 154061518&emsp;&emsp;           
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-        </svg>
-        Correo electrónico: truffe_gaston@yahoo.com &emsp;&emsp;
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-        </svg>
-        Dirección: 9 de Julio 1437 - San Benito - Entre Rios
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg> 
+          Teléfono: +54 (0343) 154061518&emsp;&emsp;
+        </span>
+        <span>          
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
+          Correo electrónico: truffe_gaston@yahoo.com&emsp;&emsp;
+        </span>
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+          Dirección: 9 de Julio 1437 - San Benito - Entre Rios&emsp;&emsp;
+        </span>
       </p>
+      
     </div>
   </header>
   <main class="main">
     <section class="section">
-      <h3>Educación</h3>
-      <h5>Universidad Tecnológica Nacional - Facultad Regional Paraná</h5>
-      <p>Título obtenido: Ingeniero Electrónico</p>
-      <p>Año de graduación: 2021</p>
-      <h5>Escuela Secundaria Gral. Francisco Ramirez - ENET n° 1</h5>
-      <p>Título obtenido: Tecnico Electrónico</p>
-      <p>Año de graduación: 2008</p>
-      <h3>Experiencia Laboral</h3>
-      <h5>Servicio técnico en comercio de informática</h5>
-      <p>PC Ingeníeria, Paraná, Entre Rios. Trabajo de armado y reparacion de PC</p>
-      <p>Período: Julio 2011 - Noviembre 2012</p>
-      <h5>Servicio técnico en comercio de informática</h5>
-      <p>Zatti informática, San Benito, Entre Rios. Trabajo de armado y reparacion de PC e impresoras. Mantenimiento de redes informáticas. Venta de insumos. Asesoramiento general.</p>
-      <p>Período: Octubre 2013 - Septiembre 2015</p>
-      <h5>Fuerza Aérea Argentina. Grupo 1 de Comunicaciones Escuela, Paraná, Entre Rios.</h5>
-      <p>Auxiliar del servicio de mantenimiento de sistemas complementarios; auxiliar del pañol de respuestos, herramientas e intrumental.</p>
-      <p>Período: Noviembre 2015 - Actualidad</p>
-      <h5>Servicio técnico de televisores</h5>
-      <p>JECH electrónica, Paraná. Reparación de televisores LCD y OLED. Venta de insumos. Asesoramiento general.</p>
-      <p>Período: Febrero 2021 - Actualidad</p>
+      <ul>
+        <h3>Educación</h3>
+        <li><h5>Universidad Tecnológica Nacional - Facultad Regional Paraná</h5></li>
+        <p>Título obtenido: Ingeniero Electrónico<br>-Año de graduación: 2021</p>
+       
+        <li><h5>Escuela Secundaria Gral. Francisco Ramirez - ENET n° 1</h5></li>
+        <p>Título obtenido: Tecnico Electrónico<br>-Año de graduación: 2008</p>
+        
+        <h3>Experiencia Laboral</h3>
+        <li><h5>Servicio técnico en comercio de informática</h5></li>
+        <p>PC Ingeníeria, Paraná, Entre Rios. Trabajo de armado y reparacion de PC<br>-Período: Julio 2011 - Noviembre 2012</p>
+       
+        <li><h5>Servicio técnico en comercio de informática</h5></li>
+        <p>Zatti informática, San Benito, Entre Rios. Trabajo de armado y reparacion de PC e impresoras. Mantenimiento de redes informáticas. Asesoramiento general.<br>
+        -Período: Octubre 2013 - Septiembre 2015</p>
+
+        <li><h5>Fuerza Aérea Argentina. Grupo 1 de Comunicaciones Escuela, Paraná, Entre Rios.</h5></li>
+        <p>Auxiliar del servicio de mantenimiento de sistemas complementarios; auxiliar del pañol de respuestos, herramientas e intrumental.<br>-Período: Noviembre 2015 - Actualidad</p>
+        
+        <li><h5>Servicio técnico de televisores</h5></li>
+        <p>JECH electrónica, Paraná. Reparación de televisores LCD y OLED. Venta de insumos. Asesoramiento general.<br>-Período: Febrero 2021 - Actualidad</p>        
+      </ul>
     </section>
     <aside class="aside">
-      Datos personales***********
+      <h3>Datos personales</h3>
+      <hr>
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event-fill" viewBox="0 0 16 16">
+        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+        </svg>&emsp;2 de Octubre de 1989</p>
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+        <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+        <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+      </svg>&emsp;Edad Actual: <span id="edad"></span></p> 
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+      </svg>&emsp;Paraná</p>
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+        <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+      </svg>&emsp;Clase A1.2-b1</p>
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+      </svg>&emsp;Masculino</p>
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+      </svg>&emsp;Argentina</p>
+
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+      </svg>&emsp;Soltero</p>
+
+      </p>
     </aside>
     
-  </main>
-    
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </main>    
+  <script src="js/aplicacion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
